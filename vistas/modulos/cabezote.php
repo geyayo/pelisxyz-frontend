@@ -1,7 +1,7 @@
 <div class="container-fluid barraSuperior" id="top">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-9 social">
+            <div class="col-12 col-md-8 social">
                 <ul>
                     <li>
                         <a href="http://facebook.com/" target="_blank">
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-3 registro">
+            <div class="col-12 col-md-4 registro">
                 <ul>
                     <li><a href="#modalIngreso" data-toggle="modal"><i class="fas fa-user"></i> Ingresar</a></li>
                     <li>|</li>
@@ -55,7 +55,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categorias
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu backColor" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -70,7 +70,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
     </nav>

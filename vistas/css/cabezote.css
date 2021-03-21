@@ -1,0 +1,12 @@
+/* ========== TOP ========== */
+
+#top ul{
+    padding-top: 10px;
+}
+
+#top ul li{
+    display: inline;
+    line-height: 30px;
+    margin: 0px 5px;
+    color: white;
+}
