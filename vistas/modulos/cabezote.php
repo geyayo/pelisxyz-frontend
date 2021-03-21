@@ -3,7 +3,17 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-md-8 social">
                 <ul>
-                    <li>
+                    <?php
+                        $social = ControladorPlantilla::ctrEstiloPlantilla();
+                        $jsonRedesSociales = json_decode($social["redesSociales"],true);
+                        
+                        foreach ($jsonRedesSociales as $key => $value) {
+                            echo '<a href="'.$value["url"].'" target="_blank">
+                                    <i class="'.$value["red"].' redSocial '.$value["estilo"].'"></i>
+                                </a>';
+                        }
+                    ?>
+                    <!-- <li>
                         <a href="http://facebook.com/" target="_blank">
                             <i class="fab fa-facebook-f redSocial facebookBlanco"></i>
                         </a>
@@ -22,7 +32,7 @@
                         <a href="http://youtube.com/" target="_blank">
                             <i class="fab fa-youtube redSocial youtubeBlanco"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-4 registro">
