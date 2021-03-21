@@ -1,7 +1,8 @@
 /* ========== TOP ========== */
 
 #top ul{
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 0px;
 }
 
 #top ul li{
@@ -10,3 +11,100 @@
     margin: 0px 5px;
     color: white;
 }
+
+/* ========== MENU ========== */
+#menu nav img{
+    width: 250px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+/* ========== PUNTOS DE QUIEBRE ========== */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* ========== MENU ========== */
+    #menu nav img{
+        width: 250px;
+
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    /* ========== MENU ========== */
+    #menu nav img{
+        width: 200px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    /* ========== TOP ========== */
+    #top ul li a{
+        font-size: 12px;
+    }
+    /* ========== MENU ========== */
+    #menu nav img{
+        width: 170px;
+        margin-top: -5px;
+        margin-right: 10px;
+        margin-bottom: -5px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) and (min-width: 576px) {
+    /* ========== TOP ========== */
+    #top{
+        padding-bottom: 3px;
+    }
+    #top .social{
+        margin-bottom: -10px;
+    }
+    #top .registro{
+        margin-top: -3px;
+    }
+    #top ul{
+        text-align: center
+    }
+    #top ul li a{
+        font-size: 12px;
+    }
+    /* ========== MENU ========== */
+    #menu nav img{
+        width: 170px;
+        margin-top: -5px;
+        margin-right: 10px;
+        margin-bottom: -5px;
+    }
+}
+/* Extra small devices (portrait phones, less than 320px) */
+@media (max-width: 575.98px) {
+    /* ========== TOP ========== */
+    #top{
+        padding-bottom: 3px;
+    }
+    #top .social{
+        margin-bottom: -10px;
+    }
+    #top .registro{
+        margin-top: -3px;
+    }
+    #top ul{
+        text-align: center
+    }
+    #top ul li a{
+        font-size: 12px;
+    }
+    /* ========== MENU ========== */
+    #menu nav img{
+        width: 185px;
+        margin-top: -5px;
+        margin-right: 10px;
+        margin-bottom: -5px;
+    }
+}
+
+
+
+
+
+
+
