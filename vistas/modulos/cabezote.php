@@ -28,7 +28,7 @@
 
 <div class="container-fluid backColor" id="menu">
     <nav class="container navbar navbar-expand-lg backColor">
-        <img src="http://localhost/pelisxyz/backend/vistas/img/plantilla/logo.png" class="img-fluid" alt="Logo Pelis XYZ">
+        <img src="http://localhost/pelisxyz/backend/<?php echo $social["logo"]?>" class="img-fluid" alt="Logo Pelis XYZ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
     </button>
