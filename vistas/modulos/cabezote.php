@@ -13,26 +13,6 @@
                                 </a>';
                         }
                     ?>
-                    <!-- <li>
-                        <a href="http://facebook.com/" target="_blank">
-                            <i class="fab fa-facebook-f redSocial facebookBlanco"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/" target="_blank">
-                            <i class="fab fa-instagram redSocial instagramBlanco"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com/" target="_blank">
-                            <i class="fab fa-twitter redSocial twitterBlanco"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://youtube.com/" target="_blank">
-                            <i class="fab fa-youtube redSocial youtubeBlanco"></i>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-md-4 registro">
