@@ -9,6 +9,8 @@
         $icono = ControladorPlantilla::ctrEstiloPlantilla();
         
         echo '<link rel="shortcut icon" href="http://localhost/pelisxyz/backend/'.$icono["icono"].'" type="image/x-icon">';
+    
+        $url = Ruta::ctrRuta();
     ?>
     <meta name="description" content="Una descripción del sitio">
     <meta name="keyword" content="palabras, claves, del, sitio">
@@ -17,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="vistas/css/plantilla.css">
-    <link rel="stylesheet" href="vistas/css/cabezote.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plantilla.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/cabezote.css">
 
 </head>
 <body>
@@ -26,8 +28,13 @@
     <?php
         include "modulos/cabezote.php";
 
+        $rutas = array();
+
         if(isset($_GET["ruta"])){
-            echo $_GET["ruta"];
+            
+            $rutas = explode("/", $_GET["ruta"]);
+
+            var_dump($rutas[0]);
         }
     ?>
 
@@ -40,7 +47,7 @@
     <script src="vistas/js/plugins/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="vistas/js/plugins/fontawesome.min.js"></script>
-    <script src="vistas/js/plantilla.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plugins/fontawesome.min.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plantilla.js"></script>
 </body>
 </html>
