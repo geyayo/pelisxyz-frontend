@@ -25,6 +25,10 @@
     
     <?php
         include "modulos/cabezote.php";
+
+        if(isset($_GET["ruta"])){
+            echo $_GET["ruta"];
+        }
     ?>
 
 

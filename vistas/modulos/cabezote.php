@@ -41,7 +41,7 @@
                 foreach ($categorias as $key => $value) {
                     echo'
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">'.$value["categoria"].'</a>
+                            <a class="nav-link" href="'.$value["ruta"].'">'.$value["categoria"].'</a>
                         </li>
                         
                     ';
@@ -57,17 +57,11 @@
                                 
                                 foreach ($subcategorias as $key => $value) {
                                     echo'
-                                        <a class="dropdown-item" href="#">'.$value["subcategoria"].'</a>
+                                        <a class="dropdown-item" href="'.$value["ruta"].'">'.$value["subcategoria"].'</a>
                                     ';
                                 }
                                 
                             ?> 
-                            <!-- <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a> -->
                         </div>
                     </li>
                     <li class="nav-item">
