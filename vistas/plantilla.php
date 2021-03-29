@@ -28,6 +28,8 @@
     <?php
         include "modulos/cabezote.php";
 
+        /* =========== CONTENIDO DINAMICO ========== */
+
         $rutas = array();
         $ruta = null;
 
@@ -38,6 +40,8 @@
             $item = "ruta";
             $valor = $rutas[0];
 
+            /* =========== URL´s AMIGABLE CATEGORIAS ========== */
+
             $rutaCategorias = ControladorPeliculas::ctrMostrarCategorias($item, $valor);
             
             if(is_array($rutaCategorias)){
@@ -45,6 +49,18 @@
                     $ruta = $valor;
                 }
             }
+
+            /* =========== URL´s AMIGABLE SUB-CATEGORIAS ========== */
+
+            $rutaSubCategorias = ControladorPeliculas::ctrMostrarSubCategorias($item, $valor);
+            
+            if(is_array($rutaSubCategorias)){
+                if($valor == $rutaSubCategorias["ruta"]){
+                    $ruta = $valor;
+                }
+            }
+
+            /*========== LISTA BLANCA DE URL's AMIGABLES ==========*/
 
             if($ruta != null){
                 include "modulos/peliculas.php";

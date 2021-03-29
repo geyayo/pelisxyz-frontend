@@ -6,9 +6,9 @@ class ControladorPeliculas{
         $respuesta = ModeloPeliculas::mdlMostrarCategorias($tabla, $item, $valor);
         return $respuesta;
     }
-    public function ctrMostrarSubCategorias(){
+    static public function ctrMostrarSubCategorias($item, $valor){
         $tabla = "subcategorias";
-        $respuesta = ModeloPeliculas::mdlMostrarSubCategorias($tabla);
+        $respuesta = ModeloPeliculas::mdlMostrarSubCategorias($tabla, $item, $valor);
         return $respuesta;
     }
 }

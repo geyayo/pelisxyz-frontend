@@ -78,17 +78,36 @@ a:visited, a:link, a:focus, a:hover, a:active{
     background: #d6513e;
 }
 
+/* ERROR 4040 */
+.error404{
+    color:#333;
+}
+.error404 h1{
+    margin-top: -20px;
+}
+
+
 /* ========== PUNTOS DE QUIEBRE ========== */
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .col-xl-0{
         display: none;
-    }       
+    }
+    /* ERROR 404 */
+    .error404 h1{
+        font-size: 300px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 1199.98px) and (min-width: 992px) {
     .col-lg-0{
         display: none;
+    }
+    /* ERROR 404 */
+    .error404 h1{
+        font-size: 250px;
+        text-shadow: 8px 8px 1px #dadada;
     }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -96,16 +115,40 @@ a:visited, a:link, a:focus, a:hover, a:active{
     .col-md-0{
         display: none;
     }
+    /* ERROR 404 */
+    .error404 h1{
+        font-size: 150px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
+
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) and (min-width: 576px) {
     .col-sm-0{
         display: none;
     }
+    /* ERROR 404 */
+    .error404 h1{
+        margin-top: 10px;
+        font-size: 125px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
+    .error404 h2{
+        font-size: 15px;
+    }
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .col-0{
         display: none;
+    }
+    /* ERROR 404 */
+    .error404 h1{
+        margin-top: 10px;
+        font-size: 100px;
+        text-shadow: 8px 8px 1px #dadada;
+    }
+    .error404 h2{
+        font-size: 15px;
     }
 }
