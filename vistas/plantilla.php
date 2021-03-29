@@ -29,12 +29,28 @@
         include "modulos/cabezote.php";
 
         $rutas = array();
+        $ruta = null;
 
         if(isset($_GET["ruta"])){
             
             $rutas = explode("/", $_GET["ruta"]);
 
-            var_dump($rutas[0]);
+            $item = "ruta";
+            $valor = $rutas[0];
+
+            $rutaCategorias = ControladorPeliculas::ctrMostrarCategorias($item, $valor);
+            
+            if(is_array($rutaCategorias)){
+                if($valor == $rutaCategorias["ruta"]){
+                    $ruta = $valor;
+                }
+            }
+
+            if($ruta != null){
+                include "modulos/peliculas.php";
+            } else {
+                include "modulos/error404.php";
+            }
         }
     ?>
 

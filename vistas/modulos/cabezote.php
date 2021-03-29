@@ -36,7 +36,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <?php
-                $categorias = ControladorProductos::ctrMostrarCategorias();
+
+                $item = null;
+                $valor = null;
+
+                $categorias = ControladorPeliculas::ctrMostrarCategorias($item, $valor);
                 
                 foreach ($categorias as $key => $value) {
                     echo'
@@ -53,7 +57,11 @@
                         </a>
                         <div class="dropdown-menu backColor" aria-labelledby="navbarDropdown">
                             <?php
-                                $subcategorias = ControladorProductos::ctrMostrarSubCategorias();
+                            
+                                $item = null;
+                                $valor = null;
+
+                                $subcategorias = ControladorPeliculas::ctrMostrarSubCategorias($item, $valor);
                                 
                                 foreach ($subcategorias as $key => $value) {
                                     echo'
@@ -63,9 +71,6 @@
                                 
                             ?> 
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
                     </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
